@@ -10,7 +10,7 @@ const VacationRequest = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:4000/vacation/request', {
+      const response = await axios.post('http://localhost:4000/api/vacation/request', {
         StartDate: startDate,
         EndDate: endDate,
         DaysRequested: daysRequested,

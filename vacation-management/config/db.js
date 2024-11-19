@@ -3,8 +3,7 @@ const { Sequelize } = require('sequelize');
 // Crear una instancia de Sequelize para conectar con la base de datos
 const sequelize = new Sequelize('vacationmanagement', 'root', '24042006', {
   host: 'localhost',  // Si tu servidor está en otro host, cámbialo aquí
-  dialect: 'mysql',
-  logging: false, // Desactiva el logging de las consultas SQL si no lo necesitas
+  dialect: 'mysql'
 });
 
 async function authenticateDB() {

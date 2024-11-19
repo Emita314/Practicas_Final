@@ -8,7 +8,7 @@ const Logout = () => {
   useEffect(() => {
     const logout = async () => {
       try {
-        await axios.post('http://localhost:4000/auth/logout', {}, { withCredentials: true });
+        await axios.post('http://localhost:4000/api/auth/logout', {}, { withCredentials: true });
         navigate('/login');
       } catch (error) {
         console.error('Error logging out:', error);
